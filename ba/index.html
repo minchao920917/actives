@@ -1,0 +1,390 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <title>强股弱股诊断，买了跌？卖了涨？</title> 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;"> 
+  <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=no,initial-scale=0.48"> 
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=0,minimal-ui"> -->
+  <meta name="keywords" content="未来10倍牛股,白马股,牛股,妖股金股,明日牛股推荐,明日涨停股票,尾盘选股技巧,牛股推荐,十拿九稳的选股方法,明天涨停股票,10倍牛股,免费推荐牛股,尾盘买入技巧,殷保华选股技巧,暴涨牛股,涨停股票,有潜力的股票,十年牛股,短线炒股二十招,荐股,五步选股法,明日必涨牛股,涨停股,电话荐股,明天涨停的股票,每日金股,芯片龙头股,今日十大牛股,10倍牛股,明天必涨的股票"> 
+  <meta name="description" content="股票买卖何时出手"> 
+  <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="css/default.css"> 
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css"> 
+  <link rel="stylesheet" href="js/layer/skin/layer.css?v=3.1.0" id="layuicss-layer">
+  <script src="js/jquery-1.10.2.min.js"></script> 
+  <script src="js/layer.js"></script>
+
+  <script type="text/javascript" src="js/jquery.countup.min.js"></script>
+  <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+ <!-- <script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script> -->
+ <!-- <link rel="stylesheet" type="text/css" href="css/cssconfirm_m.css"></head>  -->
+ <body style="zoom: 1;"> 
+ 	
+  <div class="main"> 
+   <div class="content"> 
+   	<img src="css/imgs/yd_top.jpg">
+    <div class="head">   	
+     <div class="head_box"> 
+      <div class="left_logo"></div> 
+      <div class="big_circular"></div> 
+      <div class="logo_ico"></div> 
+      <div class="middle_circular"> 
+       <p class="p1">强股</p> 
+       <p class="p2">机会</p> 
+       <p class="p3 active">弱股</p> 
+       <p class="p4">风险</p> 
+      </div> 
+      <div class="small_circular"> 
+       <p class="small_ballBall"></p> 
+      </div> 
+     </div> 
+     <div class="onlineBlock center">
+       累计在线诊股
+      <span class="onlineBlock_red" id="number">5078965</span>次，成功率高达
+      <span class="onlineBlock_red">93.66%</span> 
+ </div> 
+     <div class="dh2">
+        <div class="ff">
+        		 <input type="text" class="inp" name="gpdm" maxlength="6" onblur="if (this.value =='') this.value='请输入您想查询股票代码'" onkeyup="this.value=this.value.replace(/\D/g,'')" value="请输入您想查询股票代码" onclick="javascript:if(this.value=='请输入您想查询股票代码')this.value='';">
+            	<input type="text" value="请输入您的手机号" class="inp" name="phone" maxlength="11" onblur="if (this.value =='') this.value='请输入您的手机号'
+                " onfocus="this.select()" onkeyup="this.value=this.value.replace(/\D/g,'')" onpaste="return false;" onclick="if (this.value=='请输入您的手机号') this.value=''">
+                <input name="remarks" style="display:none;" type="text" value="强弱股移4)">
+           	  <input type="button" class="inp2" id="btn">       
+		</div>
+        
+</div>
+     </div> 
+        
+
+    <div class="body"> 
+     <!--领取涨停股--> 
+     <div class="rise_shares"> 
+      <p class="rise_btn center pulse animated infinite" id="rise_btn1565">领取涨停潜力牛股</p> 
+     </div> 
+     <div class="piaces"> 
+      <h2 class="title_name">名额有限，还不快抢！</h2> 
+      <span class="piaces_num"><i></i>每天诊断66个名额 ，送完即止！<i></i></span> 
+      <ul class="rise_list"> 
+       <li class="li_w" data-li="1"> 
+        <div>
+         潜力股检测
+         <br>（首次免费）
+        </div> <p class="animated_02" id="rise_011">马上检测</p> </li> 
+       <li data-li="2"> 
+        <div>
+         投顾专家
+         <br> 免费诊股机会 
+        </div> <p class="animated_02" id="rise_012">马上诊股</p> </li> 
+       <li class="li_w" data-li="3"> 
+        <div>
+         行情走势
+         <br> 体验资格 
+        </div> <p class="animated_02" id="rise_013">马上体验</p> </li> 
+       <li data-li="4"> 
+        <div>
+         限量诊断
+         <br> 牛股走势 
+        </div> <p class="animated_02" id="rise_014">马上诊断</p> </li> 
+      </ul> 
+     </div> 
+     <!--投资团队--> 
+     <div class="zf_team"> 
+      <h2>专家团队每天免费送出明日涨停潜力牛股</h2> 
+      <div class="tableCon2">
+       <table class="tableCon_head" cellspacing="0" cellpadding="0"> 
+        <tbody>
+         <tr> 
+          <th>入选日期</th> 
+          <th>代码</th> 
+          <th>简称</th> 
+          <!--<th>入选理由</th> -->
+          <th>区间最大涨幅</th> 
+         </tr>
+        </tbody>
+       </table> 
+       <div class="tableList2"> 
+        <table class="stocktable2 clicktable"> 
+         <tbody> 
+           <tr>
+           <td>7月18日</td>
+           <td>000760</td>
+           <td>斯太尔</td>
+           <!--<td>独角兽概念</td>-->
+           <td class="red f_bold">77.01%</td>
+           </tr>
+         
+          <tr>
+           <td>7月18日</td>
+           <td>002243</td>
+           <td>通产丽星</td>
+           <!--<td>超跌反弹</td>-->
+           <td class="red f_bold">38.44%</td>
+           </tr><tr>
+           <td>7月20日</td>
+           <td>601003</td>
+           <td>柳钢股份</td>
+           <!--<td>次新股</td>-->
+           <td class="red f_bold">31.76%</td>
+           
+          </tr>
+          <tr>
+           <td>7月20日</td>
+           <td>600802</td>
+           <td>福建水泥</td>
+           <!--<td>次新股</td>-->
+           <td class="red f_bold">12.85%</td>          
+          </tr>
+          
+          <tr>
+           <td>7月23日</td>
+           <td>300032</td>
+           <td>金龙机电</td>
+         <!--  <td>次新股</td>-->
+           <td class="red f_bold">20.87%</td>        
+          </tr>
+          <tr>
+           <td>7月24日</td>
+           <td>002628</td>
+           <td>成都路桥</td>
+          <!-- <td>软件</td>-->
+           <td class="red f_bold">32.50%</td>          
+          </tr>
+          
+         </tbody> 
+        </table> 
+       </div> 
+            
+      </div> 
+      <p style=" text-align:right; padding-right:20px; font-size:12px;">以上为历史数据 仅供参考</p>
+      <p class="team_btn center pulse animated infinite" id="team_btn143">免费领取</p> 
+      <p class="team_num center"><span class="team_red">限量</span>名额送完即止！</p> 
+     </div> 
+
+     <!--风险提示--> 
+<div class="footer">
+		  <p style="font-size:12px;">
+                版权所有：河北源达信息技术股份有限公司<br><!--创立于1997年，以自主研发的股票信息终端为载体，<br>向客户提供证券信息服务的专业证券投资咨询机构。<br>-->股市有风险，入市需谨慎。<br>从事证券投资或期货交易，请通过合法证券期货经营机构进行。<br>合法机构名单可到中国证监会网站（www.csrc.gov.cn）查询。
+           </p></div>
+      <img src="css/imgs/yd_bottom.jpg">
+
+    </div> 
+   </div> 
+   
+  </div>
+  <input class="stockNum hidden" type="text" value="">  
+  <div class="zhegai"></div>
+
+  <!--弹窗2--> 
+  <div class="dialog2"> 
+   <div class="circle2"></div> 
+   <p class="dialog_txt txt1"></p> 
+   <p class="prompt s-zg-title top31">每个手机号限领一次</p> 
+				<input type="text" class="stockcode" style="display:none;" name="gpdm2" id="cpcode" placeholder="请输入股票代码" maxlength="6">
+                <input type="text" value="请输入您的手机号" class="inp0" name="phone2" maxlength="11" onblur="if (this.value =='') this.value='请输入您的手机号'
+                " onfocus="this.select()" onkeyup="this.value=this.value.replace(/\D/g,'')" onpaste="return false;" onclick="if (this.value=='请输入您的手机号') this.value=''">
+                <input name="remarks2" style="display:none;" type="text" value="强弱股移4)">
+                <input type="button" class="inp1" id="btn2" value="点击领取"> 
+      
+   <div class="promise center" style="padding-top:15px;">
+    郑重承诺：绝不泄露您的个人信息
+    <!--<div class="note" style="color:#FFF;">温馨提示：稍后会有专业人员告知您查询结果！</div>-->
+   </div>
+  </div> 
+  <!--弹窗3--> 
+  <div class="dialog3"> 
+   <div class="circle3"></div> 
+   <p class="dialog_txt txt4"></p> 
+   <p class="dialog3_num center"></p>
+                      <input type="text" class="inp0" name="gpdm3" maxlength="6" onblur="if (this.value =='') this.value='请输入您想查询股票代码'" onkeyup="this.value=this.value.replace(/\D/g,'')" value="请输入您想查询股票代码" onclick="javascript:if(this.value=='请输入您想查询股票代码')this.value='';">
+                      <input type="text" value="请输入您的手机号" class="inp0" name="phone3" maxlength="11" onblur="if (this.value =='') this.value='请输入您的手机号'
+                " onfocus="this.select()" onkeyup="this.value=this.value.replace(/\D/g,'')" onpaste="return false;" onclick="if (this.value=='请输入您的手机号') this.value=''">
+                	<input name="remarks3" style="display:none;" type="text" value="强弱股移4)">
+                      <input type="button" class="inp1" id="btn3" value="点击接收查询结果"> 
+                     
+   <div class="promise center" style="padding-top:15px;">
+    郑重承诺：绝不泄露您的个人信息信息
+   </div> 
+  </div> 
+  <script src="js/zfps.js"></script> 
+  <script>document.write("<script src='js/wl.js?v="+new Date().getTime()+"'><\/script>");</script><script src="js/wl.js?v=1534926944136"></script>
+  <script>
+        // 数字递增
+        $('#number').countUp();
+  </script>
+  <script type="text/javascript">
+      var viewPortScale;
+    var dpr = window.devicePixelRatio;
+    viewPortScale = 0.5;
+    var detectBrowser = function(name) {
+        if (navigator.userAgent.toLowerCase().indexOf(name) > -1) {
+            return true;
+        } else {
+            return false;
+        }
+    };
+    var width = parseInt(window.screen.width);
+    if (detectBrowser("mz-m2")) width = 360;
+    var scale = width / 750;
+    var userScalable = 'no';
+    if (detectBrowser("qq/")) userScalable = 'yes';
+    $('#viewport').attr('content', 'target-densitydpi=device-dpi,width=640,user-scalable=' + userScalable + ',initial-scale=' + scale);
+    layer.config({
+        maxWidth: '560'
+    });
+
+    var other = "";
+
+
+    //扇形切换
+    var num = 4;
+    var sectorList = $(".middle_circular > p");
+    setInterval(function(){
+        sectorList.eq(num - 1).removeClass("active");
+        if(num > 3){
+            sectorList.eq(0).addClass("active");
+            num = 1;
+        }else{
+            sectorList.eq(num).addClass("active");
+            num ++;
+        }
+    },1000);
+
+    // 领取涨停股按钮
+    $('.rise_btn').click(function () {
+        zfSendStep("step1");
+        other = "领取涨停股";
+        $(".dialog2 .dialog_txt").removeClass().addClass("dialog_txt txt1");
+        $(".dialog2,.zhegai").show();
+    });
+
+
+
+    //马上领按钮
+    $(".rise_list li").click(function () {
+        var  num = parseInt($(this).attr("data-li"));
+        zfSendStep("step1");
+        switch(num){
+            case 1:
+                other = "领取潜力牛股";
+                $(".dialog2 .dialog_txt").removeClass().addClass("dialog_txt txt2");
+                break;
+            case 2:
+                other = "抢三次免费诊股机会";
+                $(".dialog3_num").show();
+                $(".dialog3 .dialog_txt").removeClass().addClass("dialog_txt txt3");
+                break;
+            case 3:
+                other = "抢A股直播间体验资格";
+                $(".dialog3_num").show();
+                $(".dialog3 .dialog_txt").removeClass().addClass("dialog_txt txt4");
+                break;
+            case 4:
+                other = "领限量推荐刊牛股";
+                $(".dialog3 .dialog_txt").removeClass().addClass("dialog_txt txt5");
+                $(".dialog3_num").hide();
+                break;
+            default:
+                break;
+        }
+
+        if(num == 2){
+            $(".dialog3").show();
+        }else{
+            $(".dialog3_btn").html("马上领取");
+            $(".dialog3").show();
+        }
+        $(".zhegai").show();
+    });
+
+    //团队游资股按钮
+    $(".team_btn").click(function () {
+        zfSendStep("step1");
+        other = "领涨停游资股";
+        $(".dialog2 .dialog_txt").removeClass().addClass("dialog_txt txt6");
+        $(".dialog2,.zhegai").show();
+    });
+
+   
+
+
+    //弹窗关闭
+    $('.zhegai').click(function () {
+        $('.circle1,.circle2 ,.circle3,.circle4').click();
+    });
+
+    $('.circle1,.circle2 ,.circle3,.circle4').click(function () {
+        if($(this).parent().css('display')=='block'){
+            cancelComfirm(this);
+        }
+    });
+
+    function cancel(t) {
+        $(t).parent().css("display", "none");
+        $('.zhegai').css("display", "none");
+    }
+</script>
+
+<script type="text/javascript">
+
+	$('#btn').click(function(){
+		var phone = $("input[name=phone]").val();
+		var gpdm = $("input[name=gpdm]").val();
+		var remarks = $("input[name=remarks]").val();
+		var id = request("id");
+		$.post('https://download.zslxt.com/tinterface.php',{phone:phone,gpdm:gpdm,qudao:102,remarks:remarks,bm:'gbk',id:id},function(data){
+            data = JSON.parse(data)
+            if(data.code == 200){
+                alert("您的电话已成功提交，请保持手机畅通，稍后会有0311XXXX客服人员与您联系。");
+            }else{
+                alert(data.msg)
+            }
+		})		
+	})
+	
+		$('#btn2').click(function(){
+		var phone = $("input[name=phone2]").val();
+		var gpdm = $("input[name=gpdm2]").val();
+		var remarks = $("input[name=remarks2]").val();
+		var id = request("id");
+		$.post('https://download.zslxt.com/tinterface.php',{phone:phone,gpdm:gpdm,qudao:102,remarks:remarks,bm:'gbk',id:id},function(data){
+            data = JSON.parse(data)
+            if(data.code == 200){
+                alert("您的电话已成功提交，请保持手机畅通，稍后会有0311XXXX客服人员与您联系。");
+            }else{
+                alert(data.msg)
+            }
+		})		
+	})
+		$('#btn3').click(function(){
+		var phone = $("input[name=phone3]").val();
+		var gpdm = $("input[name=gpdm3]").val();
+		var remarks = $("input[name=remarks3]").val();
+		var id = request("id");
+		$.post('https://download.zslxt.com/tinterface.php',{phone:phone,gpdm:gpdm,qudao:102,remarks:remarks,bm:'gbk',id:id},function(data){
+            data = JSON.parse(data)
+            if(data.code == 200){
+                alert("您的电话已成功提交，请保持手机畅通，稍后会有0311XXXX客服人员与您联系。");
+            }else{
+                alert(data.msg)
+            }
+		})		
+	})
+
+
+	function request(paras){ 
+		var url = location.href;  
+		var paraString = url.substring(url.indexOf("?")+1,url.length).split("&");  
+		var paraObj = {}  
+		for (i=0; j=paraString[i]; i++){  
+			paraObj[j.substring(0,j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=")+1,j.length);  
+		}  
+		var returnValue = paraObj[paras.toLowerCase()];  
+		if(typeof(returnValue)=="undefined"){  
+			return "";  
+		}else{  
+			return returnValue; 
+		}
+	}
+		</script>
+
+
+</body></html>

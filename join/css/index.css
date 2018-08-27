@@ -1,0 +1,130 @@
+@charset "utf-8";
+/** 清除格式化标签 **/
+html,body, ul, ol,li,p,h1,h2,h3,h4,h5,h6,figcaption,figure,fieldset{ margin: 0; padding: 0; list-style: none;}
+label,nav,main,section,article,aside,footer,address,figure,figcaption{ display:block;}
+em,i{font-style: normal;}
+
+/** 设置默认字体 **/
+html, body {-webkit-text-size-adjust: none; font-family: helvetica, Arial, "Hiragino Sans GB";-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased; font-smoothing: antialiased;}
+html, body { width: 100%; height: 100%; font-size:0.65rem; color: #fde7c6;} 
+body{ }
+  
+/** 设置表单元素**/
+button, input, select, textarea {font-family: helvetica, Arial, "Hiragino Sans GB"; outline:none;}
+textarea {resize: none;overflow: auto;}
+
+/** 去除点击后的高亮**/
+* { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+
+/** 重置图片元素 **/
+img {border: 0px; vertical-align: middle; -ms-interpolation-mode: bicubic; max-width: 100%; height: auto;}
+
+/** 重置表格元素 **/
+table {border-collapse: collapse;border-spacing: 0;}
+
+ a{color: #666; text-decoration: none;}
+
+/** 清除浮动 **/
+.clearfix {*zoom:1;}
+.clearfix:before, .clearfix:after {content: ""; display: table;}
+.clearfix:after {clear: both;}
+
+body{
+	width: 100%;
+	/*max-width: 750px;*/
+}
+.main{ 
+	/*max-width: 750px; */
+	width: 100%; 
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.slogn{
+	margin-top: 2.34rem;
+	width: 1.32rem;
+	height: 1.32rem;
+}
+.title{
+	font-size: .28rem;
+	color: #717171;
+	letter-spacing: 0;
+	margin-top: 3%;
+	margin-bottom: 10%;
+}
+.form-group{
+	border-bottom: 1px solid #D8D8D8;
+	width: 5.26rem;
+	height: .5rem;
+	margin:0 auto;
+	margin-top: 5.2%;
+	/*display: flex;*/
+}
+.form-group input{
+	height: .4rem;
+	line-height: .4rem;
+	outline:none;
+	-webkit-apperance:normal;
+	border:none;
+	padding-left: .27rem;
+	float: left;
+}
+.i-user{
+	background:url(../images/user.png);
+}
+.i-phone{
+	background:url(../images/phone.png);
+}
+.i-message{
+	background:url(../images/message.png);
+}
+.i{
+	width: .43rem;
+	min-width: .43rem;
+	height: .43rem;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center; 
+	float: left;
+}
+
+input::-webkit-input-placeholder {
+	font-size: .28rem;
+	color: #A2A2A2;
+	letter-spacing: 0;
+
+}
+.phone{
+	width: 2.24rem;
+}
+.btn-send{
+	width: 1.5rem;
+	min-width: 1.5rem;
+	height: .4rem;
+	line-height: .4rem;
+	display: inline-block;
+	position: relative;
+	bottom: .06rem;
+	font-size: .24rem;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	background: #CC0404;
+	border-radius: .08rem;
+	padding: .04rem .14rem;
+	float: right;
+}
+.btn{
+	margin-top: 1.54rem;
+	width: 5.26rem;
+	height: 0.68rem;
+	display: inline-block;
+	line-height: 0.68rem;
+	background: #CC0404;
+	border-radius: .06rem;
+	font-size: .32rem;
+	color: #FFFFFF;
+}
+.red{
+	color:#CC0404;
+}
